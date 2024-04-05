@@ -2,8 +2,7 @@ import json
 
 import pytest
 
-from sentiment_analysis import app
-
+from tweeteval import app
 
 @pytest.fixture()
 def apigw_event():
