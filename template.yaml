@@ -1,0 +1,15 @@
+Transform: AWS::Serverless-2016-10-31
+Description: TweetEval Lambda
+
+Resources:
+  TweetEvalAWSLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      PackageType: Image
+      ImageUri: tweetevalawslambda
+      Timeout: 600
+      MemorySize: 1024
+    Metadata:
+      Dockerfile: Dockerfile
+      DockerContext: ./
+      DockerTag: v1
